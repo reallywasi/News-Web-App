@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kanit:wght@800&family=REM:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+SA+Beginner&family=Kanit:wght@800&family=REM:wght@300&display=swap');
+* {
+  padding: 0;
+
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+  --padding-inline-section: 20px;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  color: var(--primary-text-color);
+}
+p {
+  font-family: "REM", sans-serif;
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav {
+  /* background-color: linear-gradient(to right, red, yellow); */
+  /* background-color: linear-gradient(to right, blue,white); */
+  background-image: linear-gradient(to right, rgb(108, 9, 9), white);
+  /* box-shadow: 0 0 4px #0088ff; */
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  font-size: 1.2rem;
+
+}
+
+.main-nav {
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.company-logo img {
+  width: 100px;
+}
+.nav-links ul {
+  gap: 20px;
+  height: 100%;
+}
+.hover-link {
+  cursor: pointer;
+}
+
+.hover-link:hover {
+  background-color: rgb(157, 125, 125);
+}
+.hover-link:active {
+  color: rgb(255, 255, 255);
+}
+
+/* nav item ke andar jab active class dali ho ie jab unki news show ho rahi ho */
+.nav-item.active {
+  color: #5c0000;
+}
+.search-bar {
+  height: 32px;
+  gap: 8px;
+}
+.news-input {
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  border-radius: 4px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.search-button {
+  font-family: "REM", sans-serif;
+
+  background-color: rgb(96, 67, 67);
+  color: wheat;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: rgb(159, 122, 122);
+}
+
+main {
+  margin-top: 80px;
+  padding-block: 20px;
+}
+
+.cards-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: start;
+}
+.card {
+  width: 360px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #090d11;
+  border-radius: 4px;
+  cursor: pointer;
+  /* background-color: rgb(245, 235, 235); */
+  background-color: #f5eeed;
+  overflow: hidden;
+  /* is se image ka size bada ho tab bhi card-container se bahar nahi niklega */
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px rgb(59, 149, 188);
+  /* background-color: rgb(215, 190, 190); */
+    background-image: linear-gradient(to top, rgb(240, 214, 214), white);
+
+  transform: translateY(-2px);
+  /* 2 px upar uth jayega */
+}
+
+.card-header img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* is se image kategi nahi hamesha fit rahegi cover hoke khich wich jygi  */
+}
+.card-content {
+  padding: 12px;
+}
+.news-source {
+  margin: 12px;
+}
+.down{
+    font-size: 1.5rem;
+}
+.social-logo{
+width: 20px;
+margin-left: 0.5rem;
+}
+.inl{
+display: inline;
+}
+.downmost{
+   justify-content: center;
+    position: fixed;
+    font-family: 'Edu SA Beginner', cursive;
+padding-right: 1rem;
+    bottom: 0;
+    width: 100%;
+    font-weight: 800;
+    color: #090d11;
+    background-image: linear-gradient(to left, rgb(71, 4, 4), white);
+
+}
+.social-href{
+    cursor: pointer;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <!-- reload ek function banayenge jo ki click karne pe call hoga -->
+        <a href="#" class="company-logo" onclick="reload()">
+          <img
+            src="19736_-_Copy-removebg-preview (2) (1).png"
+            alt="compant logo"
+          />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <!-- onNavitemclick ek function banayenge jispe click karne pe call hoga  -->
+            <!-- <li class="hover-link nav-items" id="sports" onclick="onNavItemClick('sports')">Sports</li> -->
+            <li
+              class="hover-link nav-items"
+              id="Finance"
+              onclick="onNavItemClick('Finance')"
+            >
+              Finance
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="India"
+              onclick="onNavItemClick('India')"
+            >
+              India
+            </li>
+            <!-- <li class="hover-link nav-items" id="Bollywood" onclick="onNavItemClick('Bollywood')">Bollywood</li> -->
+            <li
+              class="hover-link nav-items"
+              id="Technology"
+              onclick="onNavItemClick('Technology')"
+            >
+              Technology
+            </li>
+            <li
+              class="hover-link nav-items"
+              id="Geopolitics"
+              onclick="onNavItemClick('Geopolitics')"
+            >
+              Geopolitics
+            </li>
+            <!-- <li class="hover-link nav-items" id="Politics" onclick="onNavItemClick('Politics')">Politics</li> -->
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            type="text"
+            class="news-input"
+            id="search-text"
+            placeholder="search here"
+          />
+          <button class="search-button" id="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+    <template class="" id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-image"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            recusandae molestiae voluptate sint, repudiandae maiores dolore
+            rerum impedit ipsum nostrum!
+          </p>
+        </div>
+      </div>
+    </template>
+    <!-- template ka fayda ye hai ki ye wali cheez gayab ho jati hai DOM ke andar se  -->
+    <footer class="down">
+      <div class="downmost flex">
+        <div class="info inl">Made with love By Wasi</div>
+        <div class="insta inl">
+          <a
+            href="https://www.instagram.com/reallywasi/"
+            target="_blank"
+            class="social-href"
+            ><img src="instagram.svg" alt="" class="social-logo"
+          /></a>
+        </div>
+        <div class="github inl">
+          <a
+            href="https://github.com/reallywasi"
+            class="social-href"
+            target="_blank"
+            ><img src="icons8-github.svg" alt="" class="social-logo"
+          /></a>
+        </div>
+        <div class="linkedin inl">
+          <a
+            href="https://www.linkedin.com/in/mohammad-wasi-4a5825242/"
+            target="_blank"
+            class="social-href"
+            ><img src="icons8-linkedin.svg" alt="" class="social-logo"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
